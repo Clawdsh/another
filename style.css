@@ -1,0 +1,48 @@
+@font-face {
+    font-family:Bebas;
+    src: url(fonts/BebasNeue-Regular.ttf);
+}
+
+
+
+body {
+                    margin: auto 0;
+                    padding: 95px;
+                    line-height: 16px;
+                    max-width: 900px;   
+                    text-align: center;
+                    
+                }
+
+                hr {
+                    border: none;
+                    border-top: 3px solid #8a8a8a;
+                }
+
+                .Clawdshpic {
+                    border-radius: 50%;
+                    border: 5px solid #525252;
+                }
+
+                span {
+                    font-weight: bolder;
+                }
+             
+                .Titles {
+                   font-family: Bebas ;
+                   padding: 15px;
+                   font-style: italic;
+
+                }
+
+                #ulo {
+                    background-color: #afafaf;
+                    border: 2px black solid;
+                    border-radius: 20px;
+                }
+
+                #Footer {
+                    background-color:  #afafaf;
+                    border: 2px black solid;
+                    border-radius: 20px;
+                }
