@@ -1,21 +1,28 @@
 @font-face {
     font-family:Bebas;
     src: url(fonts/BebasNeue-Regular.ttf);
+
+    font-family: agrave;
+    src: url(fonts/AgravePro-VariableFont_wght.ttf)
 }
 
+
+/* BASE */
 * {
     box-sizing: border-box;
 }
 
 body {
-    margin: auto ;
-    padding: 95px;
-    line-height: 16px;
+    margin: 0 auto ;
+    padding: clamp(16px, 5vw, 95px);
+    line-height: 1.5;
     max-width: 900px;   
     text-align: center;
     background-image: url(Keeps/Background.jpg);
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
 }
 
 hr {
@@ -26,6 +33,10 @@ hr {
 .Clawdshpic {
     border-radius: 50%;
     border: 5px solid #525252;
+    width: 200px;
+    height: 200px;
+    transition: 1s ease;
+    object-fit: cover;
 }
 
 span {
@@ -65,26 +76,85 @@ ul, ol {
     border: solid 20px 20px;           
 }
 
-#bios {
+#aboutme {
     border: 2px solid;
     text-align: left;
     overflow: auto;
     padding: 20px;
+    box-shadow: 5px 5px 20px;
+    background-color: #716040;
+    
 }    
-                    
- #bios img {
+ 
+#aboutme p {
+    color: #080808;
+    font-family: agrave;
+}
+
+ #aboutme img {
     float: left;
     height: 100px;
+    border: 5px solid black;
+}
+
+#aboutme img:hover{
+    border-color: aliceblue;
+    
 }
                
 .button {
-    padding:5px 5px;
+    display: inline-block;
+    padding:10px 16px;
     text-wrap: wrap;
-    
+    width: 100px;
+}
+
+.litbut {
+    width: 50px;
+    height: 50px;
+    font-family: agrave;
+    border-radius: 20px;
+    width: 100px;
+}
+
+.litbut:hover {
+    box-shadow: 2px 5px;
 }
 
 .contacts {
     display: flex;
     justify-content: center;
-    gap: 20px;
+    gap: 60px;
+    align-items: center;
+    flex-wrap;
+    padding: px 0;
+}
+
+.contacts a {
+    position: relative;
+    width: 100px;
+    
+}
+
+.contacts img {
+height: 30px;
+width: 30px;
+
+}
+
+.button :hover{
+    width: 90px;
+}
+
+#clawdshhov {
+    transition: 0.3s ease;
+    width: 200px;
+    height: 200px;
+}
+
+#clawdshhov:hover {
+    content: url(Keeps/profile-hover.gif);
+    width: 200px;
+    height: 200px;
+
 }
