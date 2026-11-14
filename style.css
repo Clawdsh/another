@@ -8,91 +8,83 @@
 }
 
 body {
-                    margin: auto ;
-                    padding: 95px;
-                    line-height: 16px;
-                    max-width: 900px;   
-                    text-align: center;
+    margin: auto ;
+    padding: 95px;
+    line-height: 16px;
+    max-width: 900px;   
+    text-align: center;
+    background-image: url(Keeps/Background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
 
-                    background-image: url(Keeps/Background.jpg);
-                    background-size: cover;
-                    background-repeat: no-repeat;
-                    
-                }
+hr {
+    border: none;
+    border-top: 3px solid #8a8a8a;
+}
 
-                hr {
-                    border: none;
-                    border-top: 3px solid #8a8a8a;
-                }
+.Clawdshpic {
+    border-radius: 50%;
+    border: 5px solid #525252;
+}
 
-                .Clawdshpic {
-                    border-radius: 50%;
-                    border: 5px solid #525252;
-            
-                }
+span {
+    font-weight: bolder;
+}
 
-                span {
-                    font-weight: bolder;
-                }
-             
-                .Titles {
-                   font-family: Bebas ;
-                   padding: 15px;
-                   font-style: italic;
+.Titles {
+    font-family: Bebas ;
+    padding: 15px;
+    font-style: italic;
+}
 
-                }
+#ulo {
+    background-color: #afafaf;
+    border: 2px black solid;
+    border-radius: 20px;
+    box-shadow: 3px 3px 5px rgb(0, 0, 0);
+    margin-bottom: 1em;
+    padding: 10px;
+}
 
-                #ulo {
-                    background-color: #afafaf;
-                    border: 2px black solid;
-                    border-radius: 20px;
-                    box-shadow: 3px 3px 5px rgb(0, 0, 0);
-                    margin-bottom: 1em;
-                    padding: 10px;
-                }
+#Footer {
+    background-color:  #afafaf;
+    border: 2px black solid;
+    border-radius: 20px;
+    box-shadow: 3px 3px 5px rgb(0, 0, 0);      
+}
 
-                #Footer {
-                    background-color:  #afafaf;
-                    border: 2px black solid;
-                    border-radius: 20px;
-                    box-shadow: 3px 3px 5px rgb(0, 0, 0);
-                    
-                }
-
-                ul, ol {
-                    width: fit-content;
-                    margin: 0 auto;
-                    text-align: left;
-                
-                }   
-
-                
+ul, ol {
+    width: fit-content;
+    margin: 0 auto;
+    text-align: left;
+}                   
     
-                #name {
-                    line-height: 1;
-                    border: solid 20px 20px;
-               
-                }
+#name {
+    line-height: 1;
+    border: solid 20px 20px;           
+}
 
-                #bios {
-                    border: 2px solid;
-                    text-align: left;
-                    overflow: auto;
-                   padding: 20px;
-
-                }    
+#bios {
+    border: 2px solid;
+    text-align: left;
+    overflow: auto;
+    padding: 20px;
+}    
                     
-                #bios img {
-                    float: right;
-                    height: 100px;
-                }
+ #bios img {
+    float: left;
+    height: 100px;
+}
                
-                .button {
-                    padding:5px 5px;
-                }
+.button {
+    padding:5px 5px;
+    text-wrap: wrap;
+    
+}
 
-                .contacts {
-                     display: flex;
-                     justify-content: center;
-                     gap: 15px;
-                }
+.contacts {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
