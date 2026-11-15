@@ -9,9 +9,15 @@
     src: url(fonts/AgravePro-VariableFont_wght.ttf)
 }
 
+@font-face {
+    font-family: lose;
+    src: url(fonts/IosevkaCharonMono-Regular.ttf);
+}
+
 /* BASE */
 * {
     box-sizing: border-box;
+    font-family: lose;
 }
 
 body {
@@ -56,13 +62,26 @@ span {
     border: 2px black solid;
     border-radius: 20px;
     box-shadow: 3px 3px 5px rgb(0, 0, 0);
-    margin-bottom: 1em;
+    margin-bottom: 2em;
     padding: 10px;
     position: sticky;
+    height: 100px;
     top: 10px;
-    
+    z-index: 100;
     
 }
+
+#ulo a:hover{
+    background-color: #e89e14;
+}
+
+#ulo a{
+ border: 2px solid;
+ background-color: #d26c6cb4;  
+ transition: background-color  0.5s ease;
+}
+
+
 
 #Footer {
     background-color:  #afafaf;
@@ -77,7 +96,7 @@ ul, ol {
     text-align: left;
 }                   
     
-#name {
+#name { 
     line-height: 1;
     border: solid 20px 20px;           
 }
@@ -88,10 +107,7 @@ ul, ol {
     overflow: auto;
     padding: 20px;
     box-shadow: 5px 5px 20px;
-    background-color: #716040;
-    
-    
-    
+    background-color: #716040;    
 }    
  
 #aboutme p {
@@ -144,26 +160,46 @@ ul, ol {
 .contacts a {
     width: 100px;
     flex: 0 0 100px;
-    
 }
 
 .contacts img {
 height: 30px;
 width: 30px;
 box-shadow: 2px 2px 6px black;
-
 }
 
 
 #clawdshhov {
-    transition: 0.3s ease;
+    transition: border 0.2s ease-in-out;
     width: 200px;
     height: 200px;
+
 }
 
 #clawdshhov:hover {
     content: url(Keeps/profile-hover.gif);
     width: 200px;
     height: 200px;
-
+    border: 100px;
 }
+
+form {
+    padding: 10px;
+}
+
+form input {
+    box-shadow: 1px 1px 5px;
+    padding: 3px;
+}
+
+form button {
+    box-shadow: 3px 3px 10px;
+    background-color: #c1a673;
+}
+
+form button:hover{
+    background-color: #e89e14 ;
+    text-decoration: none;
+    z-index: -1;
+}
+
