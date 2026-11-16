@@ -52,8 +52,7 @@ span {
 }
 
 .Titles {
-    font-family: Bebas ;
-    padding: 15px;
+    padding: 5px;
     font-style: italic;
 }
 
@@ -72,12 +71,12 @@ span {
 }
 
 #ulo a:hover{
-    background-color: #e89e14;
+    background-color: #7e7e7e;
 }
 
 #ulo a{
  border: 2px solid;
- background-color: #d26c6cb4;  
+ background-color: #d1d1d1b4;  
  transition: background-color  0.5s ease;
 }
 
@@ -185,21 +184,58 @@ box-shadow: 2px 2px 6px black;
 
 form {
     padding: 10px;
+
 }
 
 form input {
     box-shadow: 1px 1px 5px;
     padding: 3px;
+    width: 100px;
 }
 
 form button {
     box-shadow: 3px 3px 10px;
-    background-color: #c1a673;
+    background-color: #dddddc;
+    margin-top: 20px;
 }
 
 form button:hover{
-    background-color: #e89e14 ;
+    background-color: #898181 ;
     text-decoration: none;
-    z-index: -1;
 }
 
+#comtacts h1{
+    border: 2px solid;
+    border-radius: 50px;
+    width: 300px;
+    text-align: center;   
+    margin: 0 auto;
+    background-color: #afafaf;
+
+}
+
+#certificationnav h2{
+    border: 2px solid;
+    border-radius: 50px;
+    width: 300px;
+    text-align: center;   
+    margin: 0 auto;
+    background-color: #afafaf;
+}
+
+#contactsto h2{
+    border: 2px solid;
+    border-radius: 50px;
+    width: 300px;
+    text-align: center;   
+    margin:  0 auto;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+    background-color: #afafaf;
+}
+
+#contactsto img{
+    width: 50px;
+    height: 50px;
+}
