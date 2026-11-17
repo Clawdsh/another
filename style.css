@@ -16,8 +16,7 @@
 
 /* BASE */
 * {
-    box-sizing: border-box;
-    font-family: lose;
+    box-sizing: border-box; 
 }
 
 body {
@@ -35,7 +34,7 @@ body {
 
 hr {
     border: none;
-    border-top: 3px solid #8a8a8a;
+    border-top: 4px solid #8a8a8a;
 }
 
 .Clawdshpic {
@@ -54,6 +53,18 @@ span {
 .Titles {
     padding: 5px;
     font-style: italic;
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+        border: 2px solid;
+    border-radius: 50px;
+    width: 300px;
+    text-align: center;   
+    margin:  0 auto;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+    background-color: #afafaf;
+
 }
 
 #ulo {
@@ -76,11 +87,18 @@ span {
 
 #ulo a{
  border: 2px solid;
- background-color: #d1d1d1b4;  
+ background-color: #c8feffb4;  
  transition: background-color  0.5s ease;
+ color: inherit;
+ text-decoration: none;
+ margin: 5px;
 }
 
-
+#ulo nav{
+    border: 2px solid;
+    background-color: #afafaf;
+    
+}
 
 #Footer {
     background-color:  #afafaf;
@@ -191,6 +209,7 @@ form input {
     box-shadow: 1px 1px 5px;
     padding: 3px;
     width: 100px;
+    margin: 10px;
 }
 
 form button {
@@ -214,26 +233,7 @@ form button:hover{
 
 }
 
-#certificationnav h2{
-    border: 2px solid;
-    border-radius: 50px;
-    width: 300px;
-    text-align: center;   
-    margin: 0 auto;
-    background-color: #afafaf;
-}
 
-#contactsto h2{
-    border: 2px solid;
-    border-radius: 50px;
-    width: 300px;
-    text-align: center;   
-    margin:  0 auto;
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 15px;
-    background-color: #afafaf;
-}
 
 #contactsto img{
     width: 50px;
