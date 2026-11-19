@@ -19,6 +19,10 @@
         box-sizing: border-box; 
     }
 
+    *::selection{
+        background-color: #587faf;
+    }
+
     body {
         margin: 0 auto ;
         padding: clamp(16px, 5vw, 95px);
@@ -132,6 +136,7 @@
         color: #080808;
         font-family: agrave;
     }
+    
 
     #aboutme img {
         float: left;
@@ -344,3 +349,11 @@
         background-color: #e8edf3;        
     }
 
+    html{
+        scroll-behavior: smooth;
+    }
+
+    .contactscol li:hover{
+        background-color: rgb(159, 159, 159);
+        box-shadow: 2px 2px 2px ;
+    }
