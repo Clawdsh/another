@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta property="og:title content="Clawdsh Portolio">
     <meta property="og:type" content="webiste">
+    <script src="https://kit.fontawesome.com/dedb50c431.js" crossorigin="anonymous"></script>
     <title>Portfolio</title>
     <link rel="icon" href="Keeps/Favicon.jpg">
     <link rel="stylesheet" href="style.css">   
@@ -16,13 +17,14 @@
 
         <a href="#home" class="logo" > <img src="Keeps/logo.png" alt=""></a>
         <nav id="navigation">
-            <a href="#intro">Home</a>
-            <a href="#random" >Random Stuff</a>
-            <a href="#hobbiesnav">Skill Set</a>
-            <a href="#works">Works</a>
-            <a href="#contactsnav">Contacts</a>
-            <a href="#certificationnav">Certifications</a>
+            <a href="#intro" class="Titles">Home</a>
+            <a href="#random" class="Titles">Random Stuff</a>
+            <a href="#hobbiesnav" class="Titles">Skill Set</a>
+            <a href="#works" class="Titles">Works</a>
+            <a href="#contactsnav" class="Titles">Contacts</a>
+            <a href="#certificationnav"class="Titles">Certifications</a>
         </nav>
+        <i class="fa-solid fa-arrow-rotate-left" fa-lg id="loga"></i>
     </header>  
 
 
@@ -71,7 +73,7 @@
 
         <section id="hobbiesnav">
         <div class="contactscol">
-        <h1 class="titlecon">Hobbies</h1>
+        <h1 class="Titles">Hobbies</h1>
             <ul class="list">
                 <li>Programming</li>
                 <li>Gaming</li>
@@ -79,7 +81,7 @@
         </div>
         
             <div class="contactscol">
-            <h1 class="titlecon" >Tech Stack</h1>
+            <h1 class="Titles">Tech Stack</h1>
             <ul class="list">
                 <li>HTML</li>
                 <li>CSS</li>
@@ -90,7 +92,7 @@
             </div>
 
             <div class="contactscol">
-                <h1 class="titlecon">Skills</h1>
+                <h1 class="Titles">Skills</h1>
                 <ul class="list">
                     <li>Adaptability</li>
                     <li>Time Management</li>
@@ -101,15 +103,19 @@
         <hr>
 
         <section id="works">
-            <h1 class="">My works</h1>
+            <h1 class="Titles">My works</h1>
 
-            <section>
+            <section id="working">
+                <div class="card-top">
                 <h1>Portfolio Website</h1>
-                <p>Language Used:</p>
-                <ul>
-                    <li>HTML</li>
-                    <li>CSS</li>
-                </ul>
+                    <a href="https://github.com/Clawdsh/another" class="visit">Visit ➚</a>
+                </div>
+
+                <a href="Keeps/cardd.png" target="_blank"><img src="Keeps/cardd.png" alt="portfolio website" class="card-photo"></a>
+                <div class="card-bottom">
+                <p>My first personal portfolio website, built from scratch using HTML & CSS. This project marks the beginning of everything</p>
+                <p  id="used">Language Used: HTML,CSS</p>
+                </div>
             </section>
         </section>
 
@@ -147,8 +153,14 @@
         <section id="certificationnav">
             <h2 class="Titles">Certification</h2>
             <br>
-            <a href="https://www.credly.com/badges/0edd9dc9-51e0-4a3f-bde2-9a1494eea8e8/public_url">
+
+            <div class="imagesc">
+            <a href="Keeps/orcert.png" alt MOS="Certificate" target="_blank">
                 <img src="Keeps/orcert.png" alt="Certificate" width="150"></a>
+                <div>
+                    <a href="https://www.credly.com/badges/0edd9dc9-51e0-4a3f-bde2-9a1494eea8e8/public_url" alt><p>Microsoft Office Specialist: Excel Associate</p></a>
+                </div>
+            </div>
         </section>
         
         <hr>  
@@ -183,16 +195,4 @@
         <p>&copy; 2026 Cloud Jharence Saulog</p>
     </footer>
 </body>
-
-
 </html>
-
-
-
-
-
-
-
-
-
-
