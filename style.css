@@ -1,17 +1,6 @@
     @font-face {
-        font-family:Bebas;
-        src: url(fonts/BebasNeue-Regular.ttf);
-
-    }
-
-    @font-face {
-        font-family: agrave;
-        src: url(fonts/AgravePro-VariableFont_wght.ttf)
-    }
-
-    @font-face {
-        font-family: lose;
-        src: url(fonts/IosevkaCharonMono-Regular.ttf);
+        font-family:neucha;
+        src: url(fonts/Neucha-Regular.ttf);
     }
 
     /* BASE */
@@ -52,24 +41,6 @@
 
     span {
         font-weight: bolder;
-    }
-
-    .Titles {
-        padding: 5px;
-        font-style: italic;
-        text-decoration: underline;
-        text-decoration-thickness: 2px;
-        border: 2px solid;
-        border-radius: 50px;
-        width: fit-content;
-        text-align: center;   
-        margin:  0 auto;
-        display: flex;
-        flex-direction: column;
-        margin-bottom: 5px;
-        background-color: #afafaf;
-        
-
     }
 
     #header {
@@ -253,15 +224,6 @@
         text-decoration: none;
     }
 
-    #comtacts h1{
-        border: 2px solid;
-        border-radius: 50px;
-        width: 300px;
-        text-align: center;   
-        margin: 0 auto;
-        background-color: #afafaf;
-    }
-
     #contactsto img{
         width: 50px;
         height: 50px;
@@ -298,22 +260,6 @@
         text-align: center;
     }
 
-    .titlecon{
-        padding: 2px;
-        text-decoration: underline;
-        text-decoration-thickness: 2px;
-        border: 2px solid;
-        border-radius: 50px;
-        width: 200px;
-        text-align: center;   
-        margin:  0 auto;
-        display: flex;
-        flex-direction: column;
-        margin-bottom: 5px;
-        background-color: #afafaf;
-        align-items: center;
-        font-size: 25px;
-    }
 
     .tipo{
         position: relative;
@@ -365,18 +311,6 @@
     background-color: #e8edf3;
     }
 
-
-    #certificationnav img{
-        border: 2px solid grey;
-        height: 200px;
-        width: 300px;
-    }
-
-    #certificationnav img:hover{
-        border: 5px solid grey;
-        transition:  ease 0.3s;
-    }
-
     #works section{
         background-color:#C0C0C0;
         padding: 20px;
@@ -385,33 +319,88 @@
         margin: 30px;
         align-content: center;
         box-shadow: 2px 5px 2px;
+        border-radius: 30px;
+        flex-direction: column;
+        gap: 10px;
+        display: flex;
+        box-sizing: border-box;
         
+    }    
+
+    .card-top{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
     }
 
-    #works section:hover{
-        box-shadow: 4px 7px 3px;
-        transition: ease 0.5s ;
-    }
-
-
-    
-    #works h1{
-        padding: 5px;
-        text-align: center;    
-        
-    }
-
-    #works ul{
-        list-style-type: none;
-        text-align: center;
-        padding: 0;
-    }
-
-    #works li{
-
-    }
-
-    #works p{
-        background-color: hsl(0, 0%, 100%);
+    #working h1{
         font-size: 20px;
+        margin: 0;
     }
+
+    .visit{
+        text-decoration: none;
+        color: black;
+        border: 2px solid;
+        background-color: grey;
+    }
+
+    .visit:hover{
+        transition: 0.5s;
+        background-color: #C0C0C0;
+    }
+
+    .card-photo{
+        width:100%;
+        min-height: 0;
+        display: flex;
+        object-fit: cover;
+    }
+
+    .card-bottom p{
+        margin: 0;
+        font-size: 10px;
+        text-align: justify;
+    }
+
+    .card-bottom #used{
+        font-size: 13px;
+    }
+
+    .imagesc{
+        border: 2px solid;
+        display: inline-block;
+        margin: 10px;
+        width: 300px;
+        border-radius: 30px;
+        overflow: hidden;
+    }
+
+    .imagesc img{
+        width: 100%;
+        display: block;
+    }
+
+    .imagesc p{
+        background-color: rgb(255, 255, 255);
+        margin: 0;
+        padding: 5px;
+        font-family: sans-serif;
+    }
+
+    .imagesc a{
+        text-decoration: none;
+        color: rgb(52, 52, 52);
+    }
+
+
+    .Titles{
+        font-family: neucha;
+    }
+
+
+#loga{
+    color: grey;
+    grid-column: 3;
+    margin-left: 100px;
+}
