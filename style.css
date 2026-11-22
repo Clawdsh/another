@@ -1,406 +1,417 @@
-    @font-face {
-        font-family:neucha;
-        src: url(fonts/Neucha-Regular.ttf);
-    }
+@font-face {
+  font-family: neucha;
+  src: url(fonts/Neucha-Regular.ttf);
+}
 
-    /* BASE */
-    * {
-        box-sizing: border-box; 
-    }
+/* BASE */
+* {
+  box-sizing: border-box;
+}
 
-    *::selection{
-        background-color: #587faf;
-    }
+*::selection {
+  background-color: #587faf;
+}
 
-    body {
-        margin: 0 auto;
-        line-height: 1.5;
-        padding: 20px;
-        max-width: 900px;   
-        text-align: center;
-        background-image: url(Keeps/Background.jpg);
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center;
-        background-attachment: fixed;
-    }
+body {
+  margin: 0 auto;
+  line-height: 1.5;
+  padding: 5px;
+  max-width: 900px;
+  text-align: center;
+  background-image: url(Keeps/Background.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+}
 
-    hr {
-        border: none;
-        border-top: 4px solid #8a8a8a;
-    }
+hr {
+  border: none;
+  border-top: 4px solid #8a8a8a;
+}
 
-    .Clawdshpic {
-        border-radius: 50%;
-        border: 5px solid #525252;
-        width: 200px;
-        height: 200px;
-        transition: 1s ease;
-        object-fit: cover;
-    }
+.Clawdshpic {
+  border-radius: 50%;
+  border: 5px solid #525252;
+  width: 200px;
+  height: 200px;
+  transition: 1s ease;
+  object-fit: cover;
+}
 
-    span {
-        font-weight: bolder;
-    }
+span {
+  font-weight: bolder;
+}
 
-    #header {
-        background-color: #171717;
-        border: 2px black solid;
-        border-radius: 20px;
-        box-shadow: 3px 3px 5px rgb(0, 0, 0);
-        margin-bottom: 2em;
-        grid-template-columns: 1fr auto 1fr;
-        padding: 10px;
-        position: sticky;
-        height: auto;
-        z-index: 100;
-        top: 0;
-        display: grid;
-        align-items: center;
-        width: 100%;
-        gap: 20px;
-        align-items: center;
-        
-    }
+#header {
+  background-color: #171717;
+  border: 2px black solid;
+  border-radius: 20px;
+  box-shadow: 3px 3px 5px rgb(0, 0, 0);
+  grid-template-columns: 1fr auto 1fr;
+  padding: 10px;
+  z-index: 100;
+  display: grid;
+  width: 100%;
+  gap: 20px;
+  align-items: center;
+}
 
-    #header a:hover{
-        background-color: #7e7e7e;
-    }
+#header a:hover {
+  background-color: #7e7e7e;
+}
 
-    #header a{
-    border: 2px solid;
-    background-color: #ffffff;  
-    transition: background-color  0.5s ease;
-    color: inherit;
-    text-decoration: none;
-    margin: 5px;
-    display: inline-block;
-    margin: auto;
-    border-radius: 50px;
-    padding: 10px   ;
-    }
+#header a {
+  border: 2px solid;
+  background-color: #ffffff;
+  transition: background-color 0.5s ease;
+  color: inherit;
+  text-decoration: none;
+  margin: 5px;
+  display: inline-block;
+  margin: auto;
+  border-radius: 50px;
+  padding: 10px;
+}
 
-    #header nav{
-        display: inline-block;
-        grid-column: 2;
-    }
+#header nav {
+  display: inline-block;
+  grid-column: 2;
+}
 
-    #header .logo{
-        border: none;
-        background: none;
-        align-items: center;
-        display: flex;
-        grid-column: 1;
-    }
+#header .logo {
+  border: none;
+  background: none;
+  align-items: center;
+  display: flex;
+  grid-column: 1;
+}
 
-    #header .logo img{
-        height: 40px;
-        width: auto;
-        display: block;
-    }
+#header .logo img {
+  height: 40px;
+  width: auto;
+  display: block;
+}
+
+#Footer {
+  background-color: #afafaf;
+  border: 2px black solid;
+  border-radius: 20px;
+  box-shadow: 3px 3px 5px rgb(0, 0, 0);
+}
+
+ul,
+ol {
+  width: fit-content;
+  margin: 0 auto;
+  text-align: left;
+}
+
+#name {
+  line-height: 1;
+  border: solid 20px 20px;
+}
+
+#aboutme {
+  border: 2px solid;
+  text-align: left;
+  overflow: auto;
+  padding: 20px;
+  box-shadow: 5px 5px 20px;
+}
+
+#aboutme p {
+  color: #080808;
+  font-family: agrave;
+  margin: 10px;
+}
+
+#aboutme img {
+  float: left;
+  margin-right: 20px;
+  border: 5px solid black;
+}
+
+#aboutme img:hover {
+  border-color: rgb(159, 159, 159);
+}
+
+.button {
+  display: inline-block;
+  border: 1px solid black;
+  border-radius: 20px;
+  padding: 10px 15px;
+  font-family: agrave;
+  text-decoration: none;
+  width: 100px;
+  transition:
+    box-shadow 0.5s ease,
+    background-color 0.5s ease;
+  background-color: #1e3a5f;
+  color: white;
+}
+
+.button:hover {
+  box-shadow: 2px 2px 10px #0a1a2e;
+  background-color: #4da3ff;
+}
+
+.contacts {
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+  align-items: center;
+  min-width: 0;
+  flex-direction: row;
+  white-space: nowrap;
+  flex-wrap: wrap;
+}
+
+.contacts a {
+  width: 100px;
+  flex: 0 0 100px;
+}
+
+.contacts img {
+  height: 30px;
+  width: 30px;
+  box-shadow: 2px 2px 6px black;
+}
 
 
-    #Footer {
-        background-color:  #afafaf;
-        border: 2px black solid;
-        border-radius: 20px;
-        box-shadow: 3px 3px 5px rgb(0, 0, 0);      
-    }
+#clawdshhov:hover {
+  content: url(Keeps/profile-hover.gif);
+  width: 200px;
+  height: 200px;
+  border: 6px solid;
+}
 
-    ul, ol {
-        width: fit-content;
-        margin: 0 auto;
-        text-align: left;
-    }                   
-        
-    #name { 
-        line-height: 1;
-        border: solid 20px 20px;           
-    }
+form {
+  padding: 10px;
+}
 
-    #aboutme {
-        border: 2px solid;
-        text-align: left;
-        overflow: auto;
-        padding: 20px;
-        box-shadow: 5px 5px 20px;
-    }    
+form input {
+  box-shadow: 1px 1px 5px;
+  padding: 3px;
+  width: 100px;
+  margin: 10px;
+}
+
+form button {
+  box-shadow: 3px 3px 10px;
+  background-color: #dddddc;
+  margin-top: 20px;
+}
+
+form button:hover {
+  background-color: #898181;
+  text-decoration: none;
+}
+
+#contactsto img {
+  width: 50px;
+  height: 50px;
+}
+
+#hobbiesnav {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 50px;
+}
+
+#hobbiesnav ul {
+  list-style: none;
+}
+
+.list {
+  text-align: start;
+  list-style: none;
+  padding: 0;
+}
+
+.list li {
+  border: 2px solid;
+  padding: 2px;
+  margin: 15px;
+  background-color: white;
+  border-radius: 50px;
+  text-align: center;
+}
+
+.tipo {
+  position: relative;
+  display: inline-block;
+  margin: 15px;
+}
+
+.tip {
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  margin-bottom: 5px;
+  box-shadow: 3px 3px 5px;
+  border: 3px solid black;
+  padding: 4px 12px;
+  opacity: 0;
+  background-color: white;
+  visibility: hidden;
+}
+
+.tipo:hover .tip {
+  opacity: 1;
+  visibility: visible;
+  transition: ease 1s;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 110px;
+}
+
+.contactscol li:hover {
+  background-color: rgb(159, 159, 159);
+  box-shadow: 2px 2px 2px;
+  animation: opacity 0.5s 1;
+}
+
+#certificationnav,
+#works,
+#random,
+#contactsto,
+#hobbiesnav,
+#comtacts,
+#aboutme {
+  border: solid 2px;
+  background-color: #e8edf3;
+}
+
+#works section {
+  background-color: #c0c0c0;
+  padding: 20px;
+  width: 300px;
+  height: 300px;
+  margin: 30px;
+  align-content: center;
+  box-shadow: 2px 5px 2px;
+  border-radius: 30px;
+  flex-direction: column;
+  gap: 10px;
+  display: flex;
+  box-sizing: border-box;
+}
+
+.card-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#working h1 {
+  font-size: 20px;
+  margin: 0;
+}
+
+.visit {
+  text-decoration: none;
+  color: black;
+  border: 2px solid;
+  background-color: grey;
+}
+
+.visit:hover {
+  transition: 0.5s;
+  background-color: #c0c0c0;
+}
+
+.card-photo {
+  width: 100%;
+  min-height: 0;
+  display: flex;
+  object-fit: cover;
+}
+
+.card-bottom p {
+  margin: 0;
+  font-size: 10px;
+  text-align: justify;
+}
+
+.card-bottom #used {
+  font-size: 13px;
+}
+
+.imagesc {
+  border: 2px solid;
+  display: inline-block;
+  margin: 10px;
+  width: 300px;
+  border-radius: 30px;
+  overflow: hidden;
+}
+
+.imagesc img {
+  width: 100%;
+  display: block;
+}
+
+.imagesc p {
+  background-color: rgb(255, 255, 255);
+  margin: 0;
+  padding: 5px;
+  font-family: sans-serif;
+}
+
+.imagesc a {
+  text-decoration: none;
+  color: rgb(52, 52, 52);
+}
+
+.Titles {
+  font-family: neucha;
+}
+
+#loga {
+  color: grey;
+  grid-column: 3;
+  margin-left: 100px;
+}
+
+#comtacts {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+
+
+@keyframes popup {
+  from {
+    transform: scale(0.5, 0.5);
+  }
+}
+
+@keyframes overall{
+  from{
+    opacity: 0;
+    transform: translateY(60px) scale(1.1); 
     
-    #aboutme p {
-        color: #080808;
-        font-family: agrave;
-    }
-    
-    #aboutme img {
-        float: left;
-        height: 100px;
-        border: 5px solid black;
-    }
+  }
+  to{
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
 
-    #aboutme img:hover{
-        border-color: rgb(159, 159, 159);
-        
-    }
-                
-    .button {
-        
-        display: inline-block;
-        border: 1px solid black;
-        border-radius: 20px;
-        padding: 10px 15px;
-        font-family: agrave;
-        text-decoration: none;
-        width: 100px;
-        transition: box-shadow 0.5s ease, background-color 0.5s ease;
-        background-color: #1e3a5f;
-        color: white;
-    }
+#clawdshhov {
+  transition: border 0.2s ease-in-out;
+  width: 200px;
+  height: 200px;
+  animation: popup 1s 1;
+}
 
-    .button:hover{
-            box-shadow: 2px 2px 10px #0a1a2e;
-            background-color: #4da3ff;      
-
-    }
-
-    .contacts {
-        display: flex;
-        justify-content: center;
-        gap: 60px;
-        align-items: center;
-        min-width: 0;
-        flex-direction: row;
-        white-space: nowrap;
-        flex-wrap: wrap;
-    }
-
-    .contacts a {
-        width: 100px;
-        flex: 0 0 100px;
-    }
-
-    .contacts img {
-    height: 30px;
-    width: 30px;
-    box-shadow: 2px 2px 6px black;
-    }
-
-
-    #clawdshhov {
-        transition: border 0.2s ease-in-out;
-        width: 200px;
-        height: 200px;
-
-    }
-
-    #clawdshhov:hover {
-        content: url(Keeps/profile-hover.gif);
-        width: 200px;
-        height: 200px;
-        border: 6px solid;
-
-    }
-
-    form {
-        padding: 10px;
-    }
-
-    form input {
-        box-shadow: 1px 1px 5px;
-        padding: 3px;
-        width: 100px;
-        margin: 10px;
-    }
-
-    form button {
-        box-shadow: 3px 3px 10px;
-        background-color: #dddddc;
-        margin-top: 20px;
-    }
-
-
-    
-    form button:hover{
-        background-color: #898181 ;
-        text-decoration: none;
-    }
-
-    #contactsto img{
-        width: 50px;
-        height: 50px;
-    }
-
-    #hobbiesnav {
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
-        gap: 50px;
-    }
-
-    #hobbiesnav ul{
-        list-style: none;
-
-    }
-
-
-
-
-    .list{
-        text-align: start;
-        list-style: none;
-        padding: 0;
-    }
-
-
-    .list li{
-        border: 2px solid;
-        padding: 2px;
-        margin: 15px;
-        background-color: white;
-        border-radius: 50px;
-        text-align: center;
-    }
-
-
-    .tipo{
-        position: relative;
-        display: inline-block;
-        margin: 15px;
-        
-        
-    }
-
-    .tip{
-        position: absolute;
-        bottom: 100%;
-        left: 50%;
-        margin-bottom: 5px;
-        box-shadow: 3px 3px 5px;
-        border: 3px solid black;
-        padding: 4px 12px;
-        opacity: 0;
-        background-color: white;
-        visibility: hidden;
-        
-    }
-
-        .tipo:hover .tip{
-        opacity: 1;
-        visibility: visible;
-        transition: ease 1s;
-    }
-
-
-    html{
-        scroll-behavior: smooth;
-        scroll-padding-top: 110px;
-    }
-
-    .contactscol li:hover{
-        background-color: rgb(159, 159, 159);
-        box-shadow: 2px 2px 2px ;
-    }
-
-    #certificationnav,
-    #works,
-    #random,
-    #contactsto,
-    #hobbiesnav,
-    #comtacts,
-    #aboutme {
-    border: solid 2px;
-    background-color: #e8edf3;
-    }
-
-    #works section{
-        background-color:#C0C0C0;
-        padding: 20px;
-        width: 300px;
-        height: 300px;
-        margin: 30px;
-        align-content: center;
-        box-shadow: 2px 5px 2px;
-        border-radius: 30px;
-        flex-direction: column;
-        gap: 10px;
-        display: flex;
-        box-sizing: border-box;
-        
-    }    
-
-    .card-top{
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-    }
-
-    #working h1{
-        font-size: 20px;
-        margin: 0;
-    }
-
-    .visit{
-        text-decoration: none;
-        color: black;
-        border: 2px solid;
-        background-color: grey;
-    }
-
-    .visit:hover{
-        transition: 0.5s;
-        background-color: #C0C0C0;
-    }
-
-    .card-photo{
-        width:100%;
-        min-height: 0;
-        display: flex;
-        object-fit: cover;
-    }
-
-    .card-bottom p{
-        margin: 0;
-        font-size: 10px;
-        text-align: justify;
-    }
-
-    .card-bottom #used{
-        font-size: 13px;
-    }
-
-    .imagesc{
-        border: 2px solid;
-        display: inline-block;
-        margin: 10px;
-        width: 300px;
-        border-radius: 30px;
-        overflow: hidden;
-    }
-
-    .imagesc img{
-        width: 100%;
-        display: block;
-    }
-
-    .imagesc p{
-        background-color: rgb(255, 255, 255);
-        margin: 0;
-        padding: 5px;
-        font-family: sans-serif;
-    }
-
-    .imagesc a{
-        text-decoration: none;
-        color: rgb(52, 52, 52);
-    }
-
-
-    .Titles{
-        font-family: neucha;
-    }
-
-
-#loga{
-    color: grey;
-    grid-column: 3;
-    margin-left: 100px;
+.animate{
+  animation: overall 5s  linear both;
+  animation-timeline: view();
+  animation-range: entry 0% entry 40%;
 }
