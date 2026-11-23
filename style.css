@@ -18,12 +18,14 @@ body {
   padding: 5px;
   max-width: 900px;
   text-align: center;
-  background-image: url(Keeps/Background.jpg);
+  background-image: url(Photos/Background.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   background-attachment: fixed;
 }
+
+
 
 hr {
   border: none;
@@ -180,7 +182,7 @@ ol {
 
 
 #clawdshhov:hover {
-  content: url(Keeps/profile-hover.gif);
+  content: url(Photos/profile-hover.gif);
   width: 200px;
   height: 200px;
   border: 6px solid;
