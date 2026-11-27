@@ -10,42 +10,43 @@
     <title>Clawdsh Gallery</title>
     <link rel="icon" href="Photos/Favicon.jpg">
     <script src="script.js" defer></script>
+    <link rel="stylesheet" href="photo.css">
 </head>
 
 <body>
 
+    <div id="welcome" class="box">
+        <a href="index.html" id="back">Go Back</a>
+        <h1>Welcome</h1>
+        <br>
+        <label>Username</label>
+        <input type="text" id="text">
+        <input type="submit" id="submit">
+        <p id="output" class="labasan">---------</p>
+    </div>
+    <div id="calculator" class="box">
+        <h1>Calculator</h1>
+        <input type="text" id="num1">
+        <input type="text" id="num2">
+        <input type="submit" id="sub">
 
-    <h1>Welcome</h1>
-    <br>
-    <label>Username</label>
-    <input type="text" id="text">
-    <input type="submit" id="submit">
-    <p id="output">---------</p>
+        <p id="out" class="labasan">-------</p>
+    </div>
+    <div id="AND" class="box">
+        <br>
+        <h1>Adding & Decrease Numbers</h1>
+        <h1 id="countresult" class="labasan">0</h1>
+        <button id="increase">increase</button>
+        <button id="decrease">Decrease</button>
+        <button id="reset">Reset</button>
+    </div>
+    <div id="randomnumber" class="box">
+        <h1>Random Number Generator</h1>
 
+        <button id="rannum">Generate!</button>
 
-    <h1>simple calcu</h1>
-    <input type="text" id="num1">
-    <input type="text" id="num2">
-    <input type="submit" id="sub">
-
-    <p id="out">-------</p>
-
-
-    <br>
-    <h1>Adding & Decree Numbers</h1>
-    <h1 id="countresult">0</h1>
-    <button id="increase">increase</button>
-    <button id="decrease">Decrease</button>
-    <button id="reset">Reset</button>
-
-    <br>
-
-    <h1>Random Number Generator</h1>
-
-    <button id="rannum">Generate!</button>
-
-    <p id="resulta">----------</p>
-
+        <p id="resulta" class="labasan">----------</p>
+    </div>
 
 </body>
 
